@@ -1,0 +1,3 @@
+#because i use env way to manage py'svirtul enviroment
+cd ~
+source jupyter_env/bin/activate 
