@@ -144,7 +144,6 @@ c.ServerApp.allow_root = True # 非 root 用户启动，无需修改
 c.ServerApp.ip = '0.0.0.0'  # 允许外部访问
 c.ServerApp.port = 8848     # 指定端口
 # c.ServerApp.open_browser = False
-c.ServerApp.password = 'qwer1234'  # 粘贴生成的哈希密码
 c.ServerApp.allow_origin = '*'
 ```
 
