@@ -118,6 +118,7 @@ conda activate peft
 
 ```shell
 pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
@@ -140,7 +141,11 @@ jupyter lab --generate-config
 
 ```python
 c.ServerApp.allow_root = True # 非 root 用户启动，无需修改
-c.ServerApp.ip = '*'
+c.ServerApp.ip = '0.0.0.0'  # 允许外部访问
+c.ServerApp.port = 8848     # 指定端口
+# c.ServerApp.open_browser = False
+c.ServerApp.password = 'qwer1234'  # 粘贴生成的哈希密码
+c.ServerApp.allow_origin = '*'
 ```
 
 使用 nohup 后台启动 Jupyter Lab
